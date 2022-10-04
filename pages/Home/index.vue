@@ -5,6 +5,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'HomePage',
   data() {
@@ -12,10 +13,10 @@ export default {
       testData:[]
     }
   },
-  async fetch({ $axios }) {
+  async fetch({$axios}) {
     const res = await $axios.get('https://vue-lessons-api.herokuapp.com/photo/list')
     console.log(res);
-    this.testData = res;
+    this.testData = res.data;
     console.log(this.testData)
   }
 }
