@@ -16,11 +16,6 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/styles/all.scss'
-  ],
-
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],
@@ -49,13 +44,7 @@ export default {
   build: {
   },
   
-  // 全域 sass (變數、mixin、extend... ) 檔案引入設定
-  styleResources: {
-    scss: [
-      '@/assets/styles/_variables.scss',
-      '@/assets/styles/_mixin.scss'
-    ]
-  },
+
   vue: {
     config: {
       productionTip: false,
